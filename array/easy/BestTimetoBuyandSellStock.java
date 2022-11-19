@@ -24,27 +24,27 @@ public class BestTimetoBuyandSellStock
     public static void main(String[] args)
     {
 	     int cp=Integer.MAX_VALUE,sp,maxpr=Integer.MIN_VALUE,p=0;	
-	     int n,input[];
+	     int n,prices[];
 	     Scanner sc=new Scanner(System.in);
 	     n=sc.nextInt();
-	     input=new int[n];
+	     prices=new int[n];
 	     for(int i=0;i<n;i++)
 	     {
-	    	 input[i]=sc.nextInt();
+	    	 prices[i]=sc.nextInt();
 	     }
-	     for(int i=0;i<n;i++)
+	   /*  for(int i=0;i<n;i++)
 	     {
 	    	 System.out.print(input[i]+" ");
-	     }
+	     } */
 	     System.out.println();
 	     for(int i=0;i<n;i++)
 	     {
-	    	 sp=input[i];
-	    	 if(cp>input[i])
-	    		 cp=input[i];
+	    	 sp=prices[i];
+	    	 if(cp>prices[i])
+	    	    cp=prices[i];
 	    	 p=sp-cp;
 	    	 if(p>maxpr)
-	    		 maxpr=p;
+	    	   maxpr=p;
 	     }
 	     System.out.println("Maximum profit : "+maxpr);
 	}
