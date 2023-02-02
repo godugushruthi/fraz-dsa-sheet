@@ -1,0 +1,7 @@
+//https://leetcode.com/problems/two-sum/description/
+/* DESCRIPTION :
+ Here the problem is to find the indexes of the two numbers from the array whose sum is equal to target.Here the array is [2,7,5,11] and target = 9 here the two numbers whose sum
+ is 9 are 2,7 and indices are 0,1 hence answer is [0,1].
+ To solve this sum there are three approaches 
+ approach 1 : We can use two for loops and solve it.In the first iteration of the for loop we will be taking one element value and second iteration for loop we will be searching
+ for compliment of the value which we got from first loop i.e compliment=target-nums[i](here nums[i] is which we have intialized in first iteration of loop).
