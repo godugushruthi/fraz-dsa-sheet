@@ -7,7 +7,7 @@
  LOGIC : There are two approaches two solve this problem 
  1st approach : Consider that we are buying the stock on i th day (i.e which will be the costprice ) now we need to find the selling price such that profit is max from the
  i+1 prices in the array.As we need two loops for this outer one for costprice inner loop for the selling price hence it takes O(n^2) time complexity.
- 2nd approach : Consider that we are not buying the stock rather we are selling the stock on ith day (i.e sellingprice) now we will calculate the minimum costprice such
+ 2nd approach : Consider that we are not buying the stock rather we are selling the stock on ith day (i.e sellingprice),and initially cp=max value now we will calculate the minimum costprice such
  that our profit is maximum.
  cosider the input : [7,1,5,3,6,4] // maxpr=maxvalue,cp=maxvalue,sp,p
 for 1st day if cp on that day is smaller than cp which we have initialized then change its value so cp=7,and we are cosidering sp=7 hence p=7-7=0 if p>maxpr then maxpr=p
